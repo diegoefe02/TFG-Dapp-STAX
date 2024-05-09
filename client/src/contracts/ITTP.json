@@ -1,0 +1,807 @@
+{
+  "contractName": "ITTP",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "descripcion",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "categoria",
+          "type": "string"
+        }
+      ],
+      "name": "agregarTTP",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        },
+        {
+          "internalType": "string",
+          "name": "descripcion",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "categoria",
+          "type": "string"
+        }
+      ],
+      "name": "actualizarTTP",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "eliminarTTP",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "obtenerTTP",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "descripcion",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "categoria",
+          "type": "string"
+        },
+        {
+          "internalType": "address",
+          "name": "reportadoPor",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "fechaReporte",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "obtenerTodosTTPs",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "descripcion",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "categoria",
+              "type": "string"
+            },
+            {
+              "internalType": "address",
+              "name": "reportadoPor",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "fechaReporte",
+              "type": "uint256"
+            }
+          ],
+          "internalType": "struct ITTP.TTP[]",
+          "name": "",
+          "type": "tuple[]"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"},{\"internalType\":\"string\",\"name\":\"descripcion\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"categoria\",\"type\":\"string\"}],\"name\":\"actualizarTTP\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"descripcion\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"categoria\",\"type\":\"string\"}],\"name\":\"agregarTTP\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"eliminarTTP\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"id\",\"type\":\"uint256\"}],\"name\":\"obtenerTTP\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"descripcion\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"categoria\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"reportadoPor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"fechaReporte\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"obtenerTodosTTPs\",\"outputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"descripcion\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"categoria\",\"type\":\"string\"},{\"internalType\":\"address\",\"name\":\"reportadoPor\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"fechaReporte\",\"type\":\"uint256\"}],\"internalType\":\"struct ITTP.TTP[]\",\"name\":\"\",\"type\":\"tuple[]\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/interfaces/ITTP.sol\":\"ITTP\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/interfaces/ITTP.sol\":{\"keccak256\":\"0xee417159c85d6acce7e4bb6e0d0fa3bd3557ee7f1625ea2eb7807a98ffacb650\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fd2ab675a5881f2cfaf2ba5e4ab663438ad7b93a0470970ed028920d8a04cb40\",\"dweb:/ipfs/QmR2SN6g4feaRsK2xxQvKeym4uyLHiaHdJ8oQJvnio9yPw\"]}},\"version\":1}",
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "",
+  "deployedSourceMap": "",
+  "source": "// SPDX-License-Identifier: MIT\r\npragma solidity ^0.8.0;\r\n\r\ninterface ITTP {\r\n    struct TTP {\r\n        string descripcion;\r\n        string categoria;\r\n        address reportadoPor;\r\n        uint256 fechaReporte;\r\n    }\r\n    \r\n    function agregarTTP(string memory descripcion, string memory categoria) external;\r\n    function actualizarTTP(uint256 id, string memory descripcion, string memory categoria) external;\r\n    function eliminarTTP(uint256 id) external;\r\n    function obtenerTTP(uint256 id) external view returns (string memory descripcion, string memory categoria, address reportadoPor, uint256 fechaReporte);\r\n    function obtenerTodosTTPs() external view returns (TTP[] memory);\r\n}",
+  "sourcePath": "C:\\Users\\difer\\Desktop\\Truffle\\contracts\\interfaces\\ITTP.sol",
+  "ast": {
+    "absolutePath": "project:/contracts/interfaces/ITTP.sol",
+    "exportedSymbols": {
+      "ITTP": [
+        1546
+      ]
+    },
+    "id": 1547,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1495,
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "33:23:6"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITTP",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "fullyImplemented": false,
+        "id": 1546,
+        "linearizedBaseContracts": [
+          1546
+        ],
+        "name": "ITTP",
+        "nameLocation": "70:4:6",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "canonicalName": "ITTP.TTP",
+            "id": 1504,
+            "members": [
+              {
+                "constant": false,
+                "id": 1497,
+                "mutability": "mutable",
+                "name": "descripcion",
+                "nameLocation": "111:11:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 1504,
+                "src": "104:18:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1496,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "104:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1499,
+                "mutability": "mutable",
+                "name": "categoria",
+                "nameLocation": "140:9:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 1504,
+                "src": "133:16:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 1498,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "133:6:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1501,
+                "mutability": "mutable",
+                "name": "reportadoPor",
+                "nameLocation": "168:12:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 1504,
+                "src": "160:20:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_address",
+                  "typeString": "address"
+                },
+                "typeName": {
+                  "id": 1500,
+                  "name": "address",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "160:7:6",
+                  "stateMutability": "nonpayable",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  }
+                },
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 1503,
+                "mutability": "mutable",
+                "name": "fechaReporte",
+                "nameLocation": "199:12:6",
+                "nodeType": "VariableDeclaration",
+                "scope": 1504,
+                "src": "191:20:6",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_uint256",
+                  "typeString": "uint256"
+                },
+                "typeName": {
+                  "id": 1502,
+                  "name": "uint256",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "191:7:6",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  }
+                },
+                "visibility": "internal"
+              }
+            ],
+            "name": "TTP",
+            "nameLocation": "89:3:6",
+            "nodeType": "StructDefinition",
+            "scope": 1546,
+            "src": "82:137:6",
+            "visibility": "public"
+          },
+          {
+            "functionSelector": "c0f4140d",
+            "id": 1511,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "agregarTTP",
+            "nameLocation": "240:10:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1509,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1506,
+                  "mutability": "mutable",
+                  "name": "descripcion",
+                  "nameLocation": "265:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1511,
+                  "src": "251:25:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1505,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "251:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1508,
+                  "mutability": "mutable",
+                  "name": "categoria",
+                  "nameLocation": "292:9:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1511,
+                  "src": "278:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1507,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "278:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "250:52:6"
+            },
+            "returnParameters": {
+              "id": 1510,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "311:0:6"
+            },
+            "scope": 1546,
+            "src": "231:81:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "9374a506",
+            "id": 1520,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "actualizarTTP",
+            "nameLocation": "327:13:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1518,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1513,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "349:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1520,
+                  "src": "341:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1512,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "341:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1515,
+                  "mutability": "mutable",
+                  "name": "descripcion",
+                  "nameLocation": "367:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1520,
+                  "src": "353:25:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1514,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "353:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1517,
+                  "mutability": "mutable",
+                  "name": "categoria",
+                  "nameLocation": "394:9:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1520,
+                  "src": "380:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1516,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "380:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "340:64:6"
+            },
+            "returnParameters": {
+              "id": 1519,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "413:0:6"
+            },
+            "scope": 1546,
+            "src": "318:96:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "525ef0ea",
+            "id": 1525,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "eliminarTTP",
+            "nameLocation": "429:11:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1523,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1522,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "449:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1525,
+                  "src": "441:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1521,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "441:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "440:12:6"
+            },
+            "returnParameters": {
+              "id": 1524,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "461:0:6"
+            },
+            "scope": 1546,
+            "src": "420:42:6",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "32aa3641",
+            "id": 1538,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "obtenerTTP",
+            "nameLocation": "477:10:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1528,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1527,
+                  "mutability": "mutable",
+                  "name": "id",
+                  "nameLocation": "496:2:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1538,
+                  "src": "488:10:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1526,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "488:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "487:12:6"
+            },
+            "returnParameters": {
+              "id": 1537,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1530,
+                  "mutability": "mutable",
+                  "name": "descripcion",
+                  "nameLocation": "537:11:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1538,
+                  "src": "523:25:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1529,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "523:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1532,
+                  "mutability": "mutable",
+                  "name": "categoria",
+                  "nameLocation": "564:9:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1538,
+                  "src": "550:23:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 1531,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "550:6:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1534,
+                  "mutability": "mutable",
+                  "name": "reportadoPor",
+                  "nameLocation": "583:12:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1538,
+                  "src": "575:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 1533,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "575:7:6",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 1536,
+                  "mutability": "mutable",
+                  "name": "fechaReporte",
+                  "nameLocation": "605:12:6",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1538,
+                  "src": "597:20:6",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 1535,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "597:7:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "522:96:6"
+            },
+            "scope": 1546,
+            "src": "468:151:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "functionSelector": "e440d081",
+            "id": 1545,
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "obtenerTodosTTPs",
+            "nameLocation": "634:16:6",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 1539,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "650:2:6"
+            },
+            "returnParameters": {
+              "id": 1544,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 1543,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 1545,
+                  "src": "676:12:6",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_struct$_TTP_$1504_memory_ptr_$dyn_memory_ptr",
+                    "typeString": "struct ITTP.TTP[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 1541,
+                      "nodeType": "UserDefinedTypeName",
+                      "pathNode": {
+                        "id": 1540,
+                        "name": "TTP",
+                        "nameLocations": [
+                          "676:3:6"
+                        ],
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 1504,
+                        "src": "676:3:6"
+                      },
+                      "referencedDeclaration": 1504,
+                      "src": "676:3:6",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_TTP_$1504_storage_ptr",
+                        "typeString": "struct ITTP.TTP"
+                      }
+                    },
+                    "id": 1542,
+                    "nodeType": "ArrayTypeName",
+                    "src": "676:5:6",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_struct$_TTP_$1504_storage_$dyn_storage_ptr",
+                      "typeString": "struct ITTP.TTP[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "675:14:6"
+            },
+            "scope": 1546,
+            "src": "625:65:6",
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 1547,
+        "src": "60:633:6",
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "src": "33:660:6"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.8.21+commit.d9974bed.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.4.16",
+  "updatedAt": "2024-05-09T10:01:55.253Z",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

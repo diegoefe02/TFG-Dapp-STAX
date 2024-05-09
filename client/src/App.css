@@ -1,0 +1,47 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ioc-table {
+  width: 100%;
+  margin-bottom: 20px;
+  border-collapse: collapse;
+}
+
+.ioc-table th,
+.ioc-table td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+.ioc-table th {
+  background-color: #f4f4f4;
+}
+
+.form-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form-container input,
+.form-container button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container button {
+  cursor: pointer;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.form-container input:focus,
+.form-container button:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
