@@ -1,13 +1,43 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* App.css */
+.App {
+  max-width: 100%;
+  margin: auto;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-link, .button {
+    padding: 8px 10px;
+    font-size: 0.8rem;
+  }
+}
+
+  
+  
+  /* Estilos adicionales para mejorar la responsividad */
+@media screen and (max-width: 640px) {
+  th, td {
+    padding: 8px 5px;  /* Reduce padding */
+  }
+
+  .hide-on-small {
+    display: none;  /* Oculta columnas menos importantes en dispositivos pequeños */
+  }
+
+  .button.tiny {
+    padding: 5px 10px;  /* Reducir el tamaño de los botones en pantallas pequeñas */
+    font-size: 0.8rem;
+  }
 }

@@ -1,47 +1,107 @@
-.App {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.ioc-table {
-  width: 100%;
-  margin-bottom: 20px;
-  border-collapse: collapse;
-}
-
-.ioc-table th,
-.ioc-table td {
-  border: 1px solid #ccc;
-  padding: 8px;
-  text-align: left;
-}
-
-.ioc-table th {
+/* App.css */
+body {
+  font-family: 'Arial', sans-serif;
   background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
 
-.form-container {
-  display: flex;
-  gap: 10px;
+h1 {
+  color: #007BFF;
+}
+
+.App {
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
   margin-top: 20px;
 }
 
-.form-container input,
-.form-container button {
-  padding: 10px;
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+input[type="text"], input[type="date"], select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
-.form-container button {
+label {
+  display: block;
+}
+
+form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.link-button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
   cursor: pointer;
-  background-color: #4CAF50;
-  color: white;
 }
 
-.form-container input:focus,
-.form-container button:focus {
-  outline: none;
-  border-color: #4CAF50;
+.link-button:hover {
+  text-decoration: none;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.875em;
+  margin-top: 10px;
+}
+
+.button, .button-link {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 2px 2px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline from links */
+  display: inline-block; /* Ensure proper spacing for links */
+}
+
+.button:hover, .button-link:hover {
+  background-color: #0056b3;
 }

@@ -11,6 +11,12 @@ contract ManagerSTIX {
     ITTP public ttpContract;
     IHerramientas public herramientasContract;
 
+    struct IOC {
+        string tipo;
+        string valor;
+        address reportadoPor;
+        uint256 fechaReporte;
+    }
 
     constructor(address _indicadorAddress, address _ttpAddress, address _herramientasAddress) {
         owner = msg.sender;
@@ -57,10 +63,33 @@ contract ManagerSTIX {
         indicadorContract.eliminarIOC(id);
     }
 
+    function obtenerIOCPorValor(string memory valorBuscado) public view returns (string memory tipo, string memory valor, address reportadoPor, uint256 fechaReporte) {
+        return indicadorContract.obtenerIOCPorValor(valorBuscado);
+    }
+
     function obtenerIOC(uint256 id) public view returns (string memory tipo, string memory valor, address reportadoPor, uint256 fechaReporte) {
         return indicadorContract.obtenerIOC(id);
     }
 
+    function obtenerTodosIOCs() public view returns (IOC[] memory) {
+        IIndicador.IOC[] memory iocsFromIndicador = indicadorContract.obtenerTodosIOCs();
+        IOC[] memory iocs = new IOC[](iocsFromIndicador.length);
+        for (uint i = 0; i < iocsFromIndicador.length; i++) {
+            iocs[i].tipo = iocsFromIndicador[i].tipo;
+            iocs[i].valor = iocsFromIndicador[i].valor;
+            iocs[i].reportadoPor = iocsFromIndicador[i].reportadoPor;
+            iocs[i].fechaReporte = iocsFromIndicador[i].fechaReporte;
+        }
+        return iocs;
+    }
+
+    function obtenerIDPorValor(string memory valorBuscado) public view returns (uint256) {
+        return indicadorContract.obtenerIDPorValor(valorBuscado);
+    }
+
+    function getTiposPermitidos() public view returns (string[] memory) {
+        return indicadorContract.getTiposPermitidos();
+    }
 
     /////////////////////////////////////////////////////////////////////////////////////
     ///////////////////////// Delegar llamadas al contrato TTP //////////////////////////
